@@ -3,21 +3,24 @@
 # @Email   : zjn@wiwi.ink
 
 import pytest
+import allure
 
 
 class Test_alluer_001:
 
     def setup(self):
         print("start................")
-        pass
 
     def teardown(self):
         print("end................")
-        pass
 
+    @pytest.allure(title="第一个测试")
     def test_001(self):
-        assert True
+        assert 0
+
+    def test_002(self):
+        assert 1
 
 
-if __name__ == '__main__':
-    pytest.main(['-s','test_allure001.py'])
+# if __name__ == '__main__':
+#     pytest.main(['-s','test_allure001.py'])
