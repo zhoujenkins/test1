@@ -4,6 +4,7 @@
 
 import pytest
 import allure
+#88a291f935e3408ab14ae0467a79865f
 
 
 class Test_alluer_001:
@@ -14,7 +15,7 @@ class Test_alluer_001:
     def teardown(self):
         print("end................")
 
-    @pytest.allure(title="第一个测试")
+    @allure.step(title="第一个测试")
     def test_001(self):
         assert 0
 
@@ -22,5 +23,5 @@ class Test_alluer_001:
         assert 1
 
 
-# if __name__ == '__main__':
-#     pytest.main(['-s','test_allure001.py'])
+if __name__ == '__main__':
+    pytest.main(['-s','test_allure001.py'])
