@@ -4,7 +4,7 @@
 
 import pytest
 import allure
-#88a291f935e3408ab14ae0467a79865f
+# 88a291f935e3408ab14ae0467a79865f
 
 
 class Test_alluer_001:
