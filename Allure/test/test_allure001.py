@@ -22,3 +22,5 @@ class Test_alluer_001:
         assert 1
 
 
+# if __name__ == '__main__':
+#     pytest.main(['-s','test_allure001.py'])
